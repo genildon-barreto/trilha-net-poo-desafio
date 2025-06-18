@@ -1,22 +1,74 @@
-# DIO - Trilha .NET - Programação orientada a objetos
-www.dio.me
+# 📱 DIO - Trilha .NET - Programação Orientada a Objetos: Modelagem de Smartphone
 
-## Desafio de projeto
-Para este desafio, você precisará usar seus conhecimentos adquiridos no módulo de orientação a objetos, da trilha .NET da DIO.
+---
 
-## Contexto
-Você é responsável por modelar um sistema que trabalha com celulares. Para isso, foi solicitado que você faça uma abstração de um celular e disponibilize maneiras de diferentes marcas e modelos terem seu próprio comportamento, possibilitando um maior reuso de código e usando a orientação a objetos.
+Este projeto é um desafio da **Trilha .NET da Digital Innovation One (DIO)**, focado em aplicar os conceitos de Programação Orientada a Objetos (POO) para modelar um sistema de celulares. O objetivo é criar uma abstração de `Smartphone` e implementar classes específicas para diferentes marcas, como Nokia e iPhone, demonstrando reuso de código e polimorfismo.
 
-## Proposta
-Você precisa criar um sistema em .NET, do tipo console, mapeando uma classe abstrata e classes específicas para dois tipos de celulares: Nokia e iPhone. 
-Você deve criar as suas classes de acordo com o diagrama abaixo:
+**Fork do projeto original, realizado de acordo com as instruções do professor Leonardo Buta.**
+[https://github.com/digitalinnovationone/trilha-net-poo-desafio.git](https://github.com/digitalinnovationone/trilha-net-poo-desafio.git)
+---
 
-![Diagrama classes](Imagens/diagrama.png)
+## 💻 Tecnologias Utilizadas
 
-## Regras e validações
-1. A classe **Smartphone** deve ser abstrata, não permitindo instanciar e servindo apenas como modelo.
-2. A classe **Nokia** e **Iphone** devem ser classes filhas de Smartphone.
-3. O método **InstalarAplicativo** deve ser sobrescrito na classe Nokia e iPhone, pois ambos possuem diferentes maneiras de instalar um aplicativo.
+* **C#:** Linguagem de programação principal utilizada.
+* **.NET:** Framework de desenvolvimento da Microsoft.
 
-## Solução
-O código está pela metade, e você deverá dar continuidade obedecendo as regras descritas acima, para que no final, tenhamos um programa funcional. Procure pela palavra comentada "TODO" no código, em seguida, implemente conforme as regras acima.
+---
+
+## ✨ Funcionalidades
+
+O sistema modela a abstração de um smartphone e suas especificidades para diferentes fabricantes, contemplando as seguintes funcionalidades e conceitos de POO:
+
+* **Classe Abstrata `Smartphone`:** Serve como um modelo base, definindo comportamentos comuns a todos os celulares (como ligar, receber ligação e número), mas não pode ser instanciada diretamente.
+* **Classes `Nokia` e `iPhone`:** Herdam da classe `Smartphone`, implementando suas próprias lógicas específicas, principalmente para a instalação de aplicativos.
+* **Polimorfismo:** O método `InstalarAplicativo` é sobrescrito nas classes `Nokia` e `iPhone`, demonstrando que diferentes objetos podem ter suas próprias implementações para um mesmo método.
+* **Reuso de Código:** Através da herança, funcionalidades comuns são definidas na classe base `Smartphone` e reutilizadas pelas classes filhas.
+* **Diagramas de Classe UML:** Interpretação e utilização de diagramas de classe para planejar e visualizar a estrutura das classes e seus relacionamentos.
+
+---
+
+## 🚀 Instruções de Execução
+
+Este projeto é uma aplicação de console em .NET. Para executá-lo:
+
+1.  **Clone o repositório:**
+    ```bash
+    git clone [https://github.com/genildon-barreto/trilha-net-poo-desafio.git](https://github.com/genildon-barreto/trilha-net-poo-desafio.git)
+    ```
+2.  **Navegue até o diretório do projeto:**
+    ```bash
+    cd trilha-net-poo-desafio
+    ```
+3.  **Restaure as dependências do projeto:**
+    ```bash
+    dotnet restore
+    ```
+4.  **Execute o projeto:**
+    ```bash
+    dotnet run
+    ```
+    O programa será executado no console, e você poderá interagir com as instâncias de `Nokia` e `iPhone`.
+
+---
+
+## 🧠 Aprendizados do Projeto
+
+Durante o desenvolvimento deste desafio, pude consolidar e aprofundar meus conhecimentos em:
+
+* **Conceitos Fundamentais de POO:** Encapsulamento, Herança e Polimorfismo.
+* **Classes Abstratas:** Entendimento e aplicação de classes abstratas para definir modelos e contratos.
+* **Sobrescrita de Métodos (`override`):** Implementação de comportamentos específicos para métodos herdados.
+* **Modelagem de Classes:** Habilidade de abstrair entidades do mundo real em classes e suas relações.
+* **Estrutura de Projetos .NET:** Organização e execução de projetos de console em C#.
+
+---
+
+## 🎓 Digital Innovation One
+
+[DIO](https://www.dio.me)
+
+---
+
+## 🤝 Contribuições
+
+Este projeto foi fornecido como um desafio pela DIO, e foi completado seguindo as instruções do professor **Leonardo Buta**. Contribuições para aprimorar o código ou adicionar novas funcionalidades são sempre bem-vindas nesse projeto, no original da DIO ou em forks pessoais!
